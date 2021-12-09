@@ -13,10 +13,10 @@
     <div id="root" class="container">
         <ul v-if="emailList.length === 10">
 
-            <li v-for="email, i in emailList" :key="i">
+            <li v-for="(email, i) in emailList" :key="i">
                 {{email}}
             </li>
-            
+
         </ul>
     </div>
 
